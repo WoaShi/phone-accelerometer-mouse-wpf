@@ -7,20 +7,37 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid Margin="0,0,0,218">
-            <TextBlock>
-                本机ip地址：
-            </TextBlock>
-            <TextBlock x:Name="ipContainer" Text="{Binding LocalIP}">
-                
-            </TextBlock>
-            
-        </Grid>
+        <Grid Background="#F9F9F9">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
 
-        <Grid Margin="0,217,0,0">
-            <TextBox Text="{Binding mouseScale}">
+            <!-- IP地址显示区域 -->
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0 0 0 20">
+                <TextBlock Text="本机 IP 地址：" 
+                   FontSize="16" 
+                   FontWeight="SemiBold" 
+                   VerticalAlignment="Center" 
+                   Margin="0,0,10,0"/>
+                <TextBlock x:Name="ipContainer" 
+                   Text="{Binding LocalIP}" 
+                   FontSize="16" 
+                   Foreground="DarkSlateGray" 
+                   VerticalAlignment="Center"/>
+            </StackPanel>
 
-            </TextBox>
+            <TextBox Grid.Row="1" 
+             Text="{Binding mouseScale}" 
+             FontSize="14" 
+             Padding="8"
+             Margin="0"
+             BorderBrush="#CCCCCC" 
+             BorderThickness="1" 
+             Background="White" 
+             Foreground="Black"
+             VerticalContentAlignment="Center"/>
         </Grid>
     </Grid>
+
 </Window>

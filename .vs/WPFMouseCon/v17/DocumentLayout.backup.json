@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Builds\\C#\\WPFMouseCon\\",
+  "WorkspaceRootPath": "D:\\Files\\.Net\\AndroidMouseWPF\\phone-accelerometer-mouse-wpf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|d:\\builds\\c#\\wpfmousecon\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|d:\\files\\.net\\androidmousewpf\\phone-accelerometer-mouse-wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|d:\\builds\\c#\\wpfmousecon\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|d:\\files\\.net\\androidmousewpf\\phone-accelerometer-mouse-wpf\\services\\dllimportservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|solutionrelative:services\\dllimportservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|d:\\files\\.net\\androidmousewpf\\phone-accelerometer-mouse-wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|d:\\builds\\c#\\wpfmousecon\\services\\getlocalipinfoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|d:\\files\\.net\\androidmousewpf\\phone-accelerometer-mouse-wpf\\services\\getlocalipinfoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|solutionrelative:services\\getlocalipinfoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|d:\\builds\\c#\\wpfmousecon\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|d:\\files\\.net\\androidmousewpf\\phone-accelerometer-mouse-wpf\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|d:\\builds\\c#\\wpfmousecon\\services\\dllimportservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|solutionrelative:services\\dllimportservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,28 +30,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 309,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ca8cc5c7-0231-406a-95cd-aa5ed6ac0190}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GetLocalIpInfoServices.cs",
-              "DocumentMoniker": "D:\\Builds\\C#\\WPFMouseCon\\Services\\GetLocalIpInfoServices.cs",
+              "DocumentMoniker": "D:\\Files\\.Net\\AndroidMouseWPF\\phone-accelerometer-mouse-wpf\\Services\\GetLocalIpInfoServices.cs",
               "RelativeDocumentMoniker": "Services\\GetLocalIpInfoServices.cs",
-              "ToolTip": "D:\\Builds\\C#\\WPFMouseCon\\Services\\GetLocalIpInfoServices.cs",
+              "ToolTip": "D:\\Files\\.Net\\AndroidMouseWPF\\phone-accelerometer-mouse-wpf\\Services\\GetLocalIpInfoServices.cs",
               "RelativeToolTip": "Services\\GetLocalIpInfoServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T03:06:11.065Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "D:\\Builds\\C#\\WPFMouseCon\\AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Files\\.Net\\AndroidMouseWPF\\phone-accelerometer-mouse-wpf\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AssemblyInfo.cs",
-              "ToolTip": "D:\\Builds\\C#\\WPFMouseCon\\AssemblyInfo.cs",
+              "ToolTip": "D:\\Files\\.Net\\AndroidMouseWPF\\phone-accelerometer-mouse-wpf\\AssemblyInfo.cs",
               "RelativeToolTip": "AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -60,11 +68,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "DllImportServices.cs",
-              "DocumentMoniker": "D:\\Builds\\C#\\WPFMouseCon\\Services\\DllImportServices.cs",
+              "DocumentMoniker": "D:\\Files\\.Net\\AndroidMouseWPF\\phone-accelerometer-mouse-wpf\\Services\\DllImportServices.cs",
               "RelativeDocumentMoniker": "Services\\DllImportServices.cs",
-              "ToolTip": "D:\\Builds\\C#\\WPFMouseCon\\Services\\DllImportServices.cs",
+              "ToolTip": "D:\\Files\\.Net\\AndroidMouseWPF\\phone-accelerometer-mouse-wpf\\Services\\DllImportServices.cs",
               "RelativeToolTip": "Services\\DllImportServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -73,11 +81,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Builds\\C#\\WPFMouseCon\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\Files\\.Net\\AndroidMouseWPF\\phone-accelerometer-mouse-wpf\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "D:\\Builds\\C#\\WPFMouseCon\\MainWindow.xaml",
+              "ToolTip": "D:\\Files\\.Net\\AndroidMouseWPF\\phone-accelerometer-mouse-wpf\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-21T03:03:05.495Z",
@@ -87,11 +95,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Builds\\C#\\WPFMouseCon\\MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Files\\.Net\\AndroidMouseWPF\\phone-accelerometer-mouse-wpf\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "D:\\Builds\\C#\\WPFMouseCon\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAxAAAAAAAAAA==",
+              "ToolTip": "D:\\Files\\.Net\\AndroidMouseWPF\\phone-accelerometer-mouse-wpf\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "MainWindow.xaml.cs*",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAqwKMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T03:03:03.379Z",
               "EditorCaption": ""

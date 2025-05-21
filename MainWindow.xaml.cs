@@ -19,16 +19,35 @@ namespace WPFMouseCon
     {
         UdpClient udpClient;
         Thread listenerThread;
-        public string? LocalIP { get; set; }
+        private DateTime lastUpdateTime = DateTime.Now;
 
+        private double velocityX = 0;
+        private double velocityY = 0;
+
+        private const double damping = 0.92;              // 衰减系数（乘法方式）
+        private const double minSpeedThreshold = 0.005;   // 忽略低于此值的微抖动速度
+        private const double maxSpeed = 80;               // 限制最大速度
+        private const double zLiftThreshold = 0.2;        // 手机抬起判断阈值（Z轴）
+
+        private double smoothedVelX = 0;
+        private double smoothedVelY = 0;
+
+        private const double smoothingFactor = 0.2;
+
+        private bool isRunning = true;
+
+        public string? LocalIP { get; set; }
         public string? mouseScale { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = this;
+
             udpClient = new UdpClient(5000);
             listenerThread = new Thread(ListenForSensorData);
             listenerThread.Start();
+
             var getLocalInInfoServices = new GetLocalIpInfoServices();
             LocalIP = getLocalInInfoServices.GetLocalIPv4();
         }
@@ -48,21 +67,31 @@ namespace WPFMouseCon
 
         private void ListenForSensorData()
         {
-            while (true)
+            while (isRunning)
             {
                 try
                 {
                     IPEndPoint remoteEP = new IPEndPoint(IPAddress.Any, 0);
                     byte[] data = udpClient.Receive(ref remoteEP);
                     string str = Encoding.UTF8.GetString(data);
+
                     var parts = str.Split(',');
 
-                    if (parts.Length == 2 &&
-                        double.TryParse(parts[0], out double accX) &&
-                        double.TryParse(parts[1], out double accY))
+                    if (parts.Length >= 2 &&
+                        double.TryParse(parts[0], out double velX) &&
+                        double.TryParse(parts[1], out double velY))
                     {
-                        MoveMouse(accX, accY);
+                        double accZ = 0;
+                        if (parts.Length >= 3 && double.TryParse(parts[2], out double parsedZ))
+                            accZ = parsedZ;
+
+                        MoveMouse(velX, velY, accZ);
                     }
+                }
+                catch (SocketException ex)
+                {
+                    if (isRunning)
+                        Console.WriteLine($"Socket Error: {ex.Message}");
                 }
                 catch (Exception ex)
                 {
@@ -71,20 +100,64 @@ namespace WPFMouseCon
             }
         }
 
-        private void MoveMouse(double accX, double accY)
+        private void MoveMouse(double inputVelX, double inputVelY, double accZ)
         {
-            // 灵敏度调节
-            double scale = 50;
-            try { scale = int.Parse(mouseScale); }
-            catch (Exception ex) { scale = 50; };
-            
+            if (Math.Abs(accZ) > zLiftThreshold)
+            {
+                velocityX = 0;
+                velocityY = 0;
+                smoothedVelX = 0;
+                smoothedVelY = 0;
+                return;
+            }
+
+            DateTime now = DateTime.Now;
+            double deltaTime = (now - lastUpdateTime).TotalSeconds * 10;
+            if (deltaTime <= 0)
+                return;
+            lastUpdateTime = now;
+
+            if (Math.Abs(inputVelX) < 0.001) inputVelX = 0;
+            if (Math.Abs(inputVelY) < 0.001) inputVelY = 0;
+
+            double scale = 10000;
+            try { scale = int.Parse(mouseScale); } catch { scale = 10000; }
+
+            velocityX = inputVelX;
+            velocityY = inputVelY;
+
+            // 滤波和平滑
+            smoothedVelX = smoothingFactor * velocityX + (1 - smoothingFactor) * smoothedVelX;
+            smoothedVelY = smoothingFactor * velocityY + (1 - smoothingFactor) * smoothedVelY;
+
+            velocityX *= damping;
+            velocityY *= damping;
+
+            if (Math.Abs(smoothedVelX) < minSpeedThreshold) smoothedVelX = 0;
+            if (Math.Abs(smoothedVelY) < minSpeedThreshold) smoothedVelY = 0;
 
             GetCursorPos(out POINT currentPos);
+            int moveX = (int)(-smoothedVelX * scale * deltaTime * deltaTime * 0.5);
+            int moveY = (int)(smoothedVelY * scale * deltaTime * deltaTime * 0.5);
 
-            int newX = currentPos.X + (int)(accX * scale);
-            int newY = currentPos.Y - (int)(accY * scale); // Y 轴反向
+            if (moveX != 0 || moveY != 0)
+            {
+                SetCursorPos(currentPos.X + moveX, currentPos.Y + moveY);
+            }
+        }
 
-            SetCursorPos(newX, newY);
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            isRunning = false;
+            udpClient?.Close();
+
+            if (listenerThread != null && listenerThread.IsAlive)
+            {
+                listenerThread.Join();
+            }
+
+            Application.Current.Shutdown();
         }
     }
 }
