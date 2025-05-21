@@ -1,0 +1,124 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Builds\\C#\\WPFMouseCon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|d:\\builds\\c#\\wpfmousecon\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|d:\\builds\\c#\\wpfmousecon\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|d:\\builds\\c#\\wpfmousecon\\services\\getlocalipinfoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|solutionrelative:services\\getlocalipinfoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|d:\\builds\\c#\\wpfmousecon\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|d:\\builds\\c#\\wpfmousecon\\services\\dllimportservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A38C973E-D943-443E-B3AA-86438ADCCE11}|WPFMouseCon.csproj|solutionrelative:services\\dllimportservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 309,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetLocalIpInfoServices.cs",
+              "DocumentMoniker": "D:\\Builds\\C#\\WPFMouseCon\\Services\\GetLocalIpInfoServices.cs",
+              "RelativeDocumentMoniker": "Services\\GetLocalIpInfoServices.cs",
+              "ToolTip": "D:\\Builds\\C#\\WPFMouseCon\\Services\\GetLocalIpInfoServices.cs",
+              "RelativeToolTip": "Services\\GetLocalIpInfoServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T03:06:11.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Builds\\C#\\WPFMouseCon\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "D:\\Builds\\C#\\WPFMouseCon\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T03:04:11.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DllImportServices.cs",
+              "DocumentMoniker": "D:\\Builds\\C#\\WPFMouseCon\\Services\\DllImportServices.cs",
+              "RelativeDocumentMoniker": "Services\\DllImportServices.cs",
+              "ToolTip": "D:\\Builds\\C#\\WPFMouseCon\\Services\\DllImportServices.cs",
+              "RelativeToolTip": "Services\\DllImportServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T03:03:52.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Builds\\C#\\WPFMouseCon\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\Builds\\C#\\WPFMouseCon\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-21T03:03:05.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Builds\\C#\\WPFMouseCon\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\Builds\\C#\\WPFMouseCon\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T03:03:03.379Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 292,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 48,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
